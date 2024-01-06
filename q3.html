@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-auto-columns: 100px;
+            padding: 10px ;
+            gap: 10px;
+            /* grid-auto-columns here describes the size of the column */
+            grid-auto-rows: 10px;
+            /* the grid-auto-rows define the size of rows that is of 10 px */
+        }
+        .class{
+            background-color: blanchedalmond;
+            border: 1px solid;
+            border-radius: 10px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>grid-auto-rows & grid-auto-columns</h1>
+    <span>the grid-auto-rows define the size of rows that is of 10 px <br> grid-auto-columns here describes the size of the column that is 100px</span>
+    <div class="container">
+        <div class="class">A</div>
+        <div class="class">B</div>
+        <div class="class">C</div>
+        <div class="class">D</div>
+    </div>
+    <!--grid-auto-columns: Specifies a default column size -->
+    <!-- grid-auto-rows: Specifies a default row size-->
+</body>
+</html>

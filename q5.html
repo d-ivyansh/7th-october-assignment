@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 200px 200px;
+            gap: 10px;
+            
+            justify-items: center;
+        }
+        .color{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .red{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        .blue{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            justify-self: start;
+        }
+        .green{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>justify-items vs justify-self</h1>
+    <span>The justify-self property aligns a grid item within its grid cell in the inline direction <br>The justify-items property is set on the grid container to give child elements (grid items) alignment in the inline direction.
+
+    </span>
+    <div class="container">
+        <div class="color red">red</div>
+        <div class="color blue">blue</div>
+        <div class="color green">green</div>
+        <div class="color red">red</div>
+    </div>
+</body>
+</html>

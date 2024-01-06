@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 2px solid;
+            width: fit-content;
+            border-radius: 10px;
+        }
+        .grid_container{
+            
+            padding: 10px;
+            display: grid;
+            
+            padding: 10px;
+            row-gap: 10px;
+            column-gap: 10px;
+            grid-template-areas: 
+            'a a b'
+            'c d b' ;
+            
+
+        }
+        .child{
+            background-color: blanchedalmond;
+            border: 1px solid;
+            border-radius: 10px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #a{
+            grid-area: a;
+            width: 310px;
+            height: 100px;
+        }
+        #c{
+            grid-area: c;
+            width: 150px;
+            height: 100px;
+        }
+        #d{
+            grid-area: d;
+            width: 150px;
+            height: 100px;
+        }
+        #b{
+            grid-area: b;
+            width: 100px;
+            height: 210px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid_container">
+
+        <div class="child" id="a">A</div>
+        <div class="child" id="b">B</div>
+        <div class="child" id="c">C</div>
+        <div class="child " id="d">D</div>
+    </div>
+</body>
+</html>
